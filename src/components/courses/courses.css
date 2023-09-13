@@ -1,0 +1,62 @@
+.container.course-container {
+  width: 40%;
+  padding-bottom: 4rem;
+}
+
+.topics-image {
+  width: 5rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 20%;
+  margin: 0 auto 1rem;
+  border: 0.3rem solid var(--color-primary-var);
+}
+
+.course {
+  background: var(--color-bg-var);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+
+.course-name {
+  text-align: center;
+  color: var(--color-white);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.course-details {
+  color: var(--color-light);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+.btn {
+  margin-top: 0.8rem !important;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: var(--color-primary);
+}
+
+/* media queries (TABS) */
+@media screen and (max-width: 1024px) {
+  .container.course-container {
+    width: 60%;
+  }
+}
+
+/* media queries (MOBILE) */
+@media screen and (max-width: 600px) {
+  .container.course-container {
+    width: var(--container-wid-sm);
+  }
+  .course-details {
+    width: var(--container-wid-sm);
+  }
+  .btn {
+    width: var(--container-wid-sm);
+  }
+}

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.portfolio-item {
+  background: var(--color-bg-var);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+/*  Start*/
+.portfolio-item:hover {
+  border-radius: 1rem 0 1rem 0;
+  border-color: var(--color-primary-var);
+  background: transparent;
+  box-shadow: 0.3rem 0.3rem 0rem var(--color-primary-var);
+  .item-image {
+    border-radius: 1rem 0 1rem 0;
+    box-shadow: 0.3rem 0.3rem 0rem var(--color-primary-var);
+  }
+  .btn {
+    border-radius: 1rem 0 1rem 0;
+    box-shadow: 0.3rem 0.3rem 0rem var(--color-primary-var);
+  }
+  .project-txt {
+    padding: 5px;
+  }
+  .item-details {
+    right: 0;
+  }
+}
+
+.item-image {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  object-fit: cover;
+  position: relative;
+}
+
+.item-details {
+  border: 1px solid transparent;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  background: #1f3d4738;
+  backdrop-filter: blur(8px);
+  position: absolute;
+  border-radius: 0.8rem 0 0.8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 2s;
+}
+.item-details h2 {
+  text-align: center;
+  color: var(--color-primary);
+  font-family: "Pacifico";
+  font-weight: 600;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+.item-details p {
+  font-size: 0.8rem;
+  color: var(--color-light);
+  text-align: center;
+  padding: 5px;
+  letter-spacing: 0.9px;
+}
+
+.portfolio-item h3 {
+  margin: 1.2rem 0 2rem;
+}
+.portfolio-item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* media queries (TABS) */
+@media screen and (max-width: 1024px) {
+  .portfolio-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+/* media queries (MOBILE) */
+@media screen and (max-width: 600px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
