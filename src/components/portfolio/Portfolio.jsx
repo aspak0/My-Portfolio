@@ -22,7 +22,7 @@ const projects = [
     title: "Codepen-clone",
     desc: "This is my Relevel by Unacademy Internship project using React and Code Mirror.",
     github: "https://github.com/aspak0/React-projects/tree/main/codepen-clone",
-    demo: "https://cummerbund-agouti.cyclic.app/",
+    demo: "https://aspak-codepen-clone.netlify.app/",
   },
   {
     id: 3,
