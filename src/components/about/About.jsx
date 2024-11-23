@@ -41,7 +41,7 @@ const About = () => {
 
             <p>
               👋 Hey there! I'm Aspak, a passionate full stack developer with a
-              flair for Frontend magic. With a dedicated passion for the past 2
+              flair for Frontend magic. With a dedicated passion for the past 3
               years, I've skilled the art of turning lines of code into
               captivating user experiences. From pixel-perfect designs to
               seamless interactive features, I've honed my skills in JavaScript,
